@@ -1,0 +1,10 @@
+Course workflow:
+-MATLAB (v2018a(?))
+-Physical environment->Model (math)->Representation (Interface)
+-Model: Random variables. (System identification toolbox)
+
+-Random number generation: Seeds, verification, new model(?)
+-Human perceptions: Video & audio.
+-Software syntax.
+-Toolbox free-use.
+-
