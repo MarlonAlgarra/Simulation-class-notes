@@ -1,0 +1,17 @@
+function min=minfunc(x,y)
+if isvector(x) && isvector(y)
+   plot(x,y)
+   hold on
+   diy=diff(y);
+   for i=1:1:length(diy)-1
+    if (diy(i)<0 && diy(i+1)>0) || (diy(i)>0 && diy(i+1)<0)
+       plot(x(i),y(i),'r*')
+       pn=[x(i),y(i)];
+       disp(pn)
+    end
+   end
+else
+    disp('Paràmetros no permitidos')
+end
+    
+end
