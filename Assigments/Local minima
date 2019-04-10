@@ -1,0 +1,12 @@
+clear; clc;
+dx=0.01;
+x=-2*pi:dx:2*pi; 
+y1=sinc(x+pi/3)
+plot(x,y1)
+hold on
+diy=diff(y1);
+for i=1:1:length(diy)-1
+    if diy(i)<0 && diy(i+1)>0
+       plot(x(i),y1(i),'r*') 
+    end
+end
